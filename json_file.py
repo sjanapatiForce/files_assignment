@@ -4,7 +4,7 @@ import os
 def load_json_file():
     folder_name=input('Enter folder name where JSON file is located: ')
     file_name = 'srihari_janapati_adoptions.json'
-    pathway ='C:/Users/sriha/Desktop/files_assignment/files_assignment/srihari_janapati_adoptions.json'
+    pathway = os.path.join(folder_name,file_name)
     try:
         with open(pathway, 'r') as file:
             data = json.load(file)
